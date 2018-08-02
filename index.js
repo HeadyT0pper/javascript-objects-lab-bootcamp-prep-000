@@ -13,6 +13,6 @@ function deleteFromObjectByKey(object, key) {
   return recipes
 }
 function destructivelyDeleteFromObjectByKey(object, key) {
-  var newRecipes = { breakfast: "eggs", lunch: "sandwhich", dinner: 'steak' }
-  delete newRecipes.lunch
+  delete key
+  return object
 }
